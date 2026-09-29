@@ -4,7 +4,7 @@ import {games} from '../../public/data/game'
 import { useState } from 'react'
 import SideBar from '../Components/Header/SideBar';
 
-function Home() {
+function Home({ setFavorites }) {
 
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState('');
@@ -20,7 +20,7 @@ function Home() {
     <div>
       <SideBar setSearch={setSearch} />
       <Filter setFilter={setFilter}/>
-      <CartList game={game} />
+      <CartList game={game} setFavorites={setFavorites} />
     </div>
   )
 }

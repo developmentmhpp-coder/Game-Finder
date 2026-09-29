@@ -1,10 +1,10 @@
-import { FaStar } from "react-icons/fa";
+import { FaHeart, FaStar } from "react-icons/fa";
 
-function CartList({ game }) {
+function CartList({ game , setFavorites}) {
   return (
     <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-8 mt-10 ">
       {game.map((el, index) => (
-        <div key={index} className="p-3 border border-surface-light bg-surface rounded-xl">
+        <div key={index} className="relative p-3 border border-surface-light bg-surface rounded-xl">
           <img src={el.image} alt="img" className="w-full mb-4 h-50" />
           <h3 className="mb-3 font-bold">{el.name}</h3>
           <p className="mb-2 p-2 bg-danger w-fit rounded-2xl">{el.genre}</p>
@@ -12,6 +12,7 @@ function CartList({ game }) {
             {" "}
             <FaStar className="fill-warning" /> {el.rating}
           </p>
+          <FaHeart className="absolute top-3 right-3 fill-danger" onClick={() => setFavorites(prev => [...prev, el])} />
         </div>
       ))}
     </div>
