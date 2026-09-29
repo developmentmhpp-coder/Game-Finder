@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router'
 import TopHeader from './Components/Header/TopHeader'
 import Favorites from './Pages/Favorites'
@@ -9,7 +9,7 @@ function App() {
 
   const [favorites, setFavorites] = useState(localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [])
 
-  useeffect(() => {
+  useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites))
   }, [favorites])
 
