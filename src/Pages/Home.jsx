@@ -2,11 +2,12 @@ import CartList from '../Components/Main/CartList'
 import Filter from '../Components/Main/Filter'
 import {games} from '../../public/data/game'
 import { useState } from 'react'
+import SideBar from '../Components/Header/SideBar';
 
-function Home({search}) {
+function Home() {
 
   const [filter, setFilter] = useState("all");
-  
+  const [search, setSearch] = useState('');
 
 
 
@@ -17,6 +18,7 @@ function Home({search}) {
 
   return (
     <div>
+      <SideBar setSearch={setSearch} />
       <Filter setFilter={setFilter}/>
       <CartList game={game} />
     </div>
