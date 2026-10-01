@@ -1,30 +1,38 @@
-import { useEffect, useState } from 'react'
-import { Route, Routes } from 'react-router'
-import TopHeader from './Components/Header/TopHeader'
-import Favorites from './Pages/Favorites'
-import Home from './Pages/Home'
-
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router";
+import TopHeader from "./Components/Header/TopHeader";
+import Favorites from "./Pages/Favorites";
+import Home from "./Pages/Home";
 
 function App() {
-
-  const [favorites, setFavorites] = useState(localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [])
+  const [favorites, setFavorites] = useState(
+    localStorage.getItem("favorites")
+      ? JSON.parse(localStorage.getItem("favorites"))
+      : [],
+  );
 
   useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(favorites))
-  }, [favorites])
-
-
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
 
   return (
     <div className="container mx-auto w-full px-4 ">
       <TopHeader favorites={favorites} />
 
       <Routes>
-        <Route path="/" element={<Home setFavorites={setFavorites} />} />
-        <Route path="/favorites" element={<Favorites favorites={favorites} setFavorites={setFavorites} />} />
+        <Route
+          path="/"
+          element={<Home setFavorites={setFavorites} favorites={favorites} />}
+        />
+        <Route
+          path="/favorites"
+          element={
+            <Favorites favorites={favorites} setFavorites={setFavorites} />
+          }
+        />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
