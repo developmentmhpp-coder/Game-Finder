@@ -3,7 +3,7 @@ import { Link } from "react-router"
 
 const TopHeader = ({ favorites }) => {
   return (
-    <div className="flex justify-between items-center h-[12vh] md:mx-10">
+    <div className="fixed top-0 left-0 flex justify-between items-center h-[12vh] md:mx-10">
       <Link to="/" >
         <h1 className="font-bold md:text-4xl">Game <span className="text-primary">Finder</span></h1>
       </Link>
