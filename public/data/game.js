@@ -39,7 +39,7 @@ image: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/library_600x900
 name: "Minecraft",
 genre: "Survival",
 rating: 9.0,
-image: "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+image: "https://upload.wikimedia.org/wikipedia/ar/5/51/Minecraft_cover.png"
 },
 {
 name: "The Last of Us Part II",
@@ -108,16 +108,10 @@ rating: 8.6,
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/library_600x900.jpg"
 },
 {
-name: "Overwatch 2",
-genre: "FPS",
-rating: 8.2,
-image: "https://upload.wikimedia.org/wikipedia/en/7/7e/Overwatch_2_Steam_cover.jpg"
-},
-{
 name: "Fortnite",
 genre: "Survival",
 rating: 8.5,
-image: "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_cover.jpg"
+image: "https://upload.wikimedia.org/wikipedia/ar/0/09/Fortnite_cover.jpg"
 },
 {
 name: "Rocket League",
@@ -156,12 +150,6 @@ rating: 8.0,
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1846380/library_600x900.jpg"
 },
 {
-name: "Mario Kart 8 Deluxe",
-genre: "Racing",
-rating: 9.2,
-image: "https://upload.wikimedia.org/wikipedia/en/7/7c/MarioKart8_Deluxe.jpg"
-},
-{
 name: "Street Fighter 6",
 genre: "Fighting",
 rating: 9.1,
@@ -180,12 +168,6 @@ rating: 8.2,
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/library_600x900.jpg"
 },
 {
-name: "Super Smash Bros. Ultimate",
-genre: "Fighting",
-rating: 9.3,
-image: "https://upload.wikimedia.org/wikipedia/en/4/40/Super_Smash_Bros._Ultimate_cover.jpg"
-},
-{
 name: "Civilization VI",
 genre: "Strategy",
 rating: 8.9,
@@ -196,12 +178,6 @@ name: "Age of Empires IV",
 genre: "Strategy",
 rating: 8.7,
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1466860/library_600x900.jpg"
-},
-{
-name: "StarCraft II",
-genre: "Strategy",
-rating: 9.2,
-image: "https://upload.wikimedia.org/wikipedia/en/2/20/StarCraft_II_-_Wings_of_Liberty.jpg"
 },
 {
 name: "Total War: Warhammer III",
@@ -232,12 +208,6 @@ name: "Dead Space",
 genre: "Horror",
 rating: 8.7,
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1693980/library_600x900.jpg"
-},
-{
-name: "Alan Wake 2",
-genre: "Horror",
-rating: 9.0,
-image: "https://upload.wikimedia.org/wikipedia/en/7/7a/Alan_Wake_2_cover_art.jpg"
 },
 {
 name: "Baldur's Gate 3",
